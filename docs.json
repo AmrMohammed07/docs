@@ -1,1 +1,1 @@
-{"$schema":"https://mintlify.com/docs.json","theme":"mint","name":"sectest","colors":{"primary":"#0D9373"},"navigation":{"pages":["index","quickstart"]},"api":{"openapi":"file:///etc/passwd"}}
+{"$schema": "https://mintlify.com/docs.json", "theme": "mint", "name": "sectest", "colors": {"primary": "#0D9373"}, "navigation": {"pages": ["index", "quickstart", {"openapi": "openapi.json"}]}, "api": {"openapi": "openapi.json"}}
