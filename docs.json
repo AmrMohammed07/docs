@@ -1,1 +1,1 @@
-{"$schema":"https://mintlify.com/docs.json","theme":"mint","name":"sectest","colors":{"primary":"#0D9373"},"feedback":{"thumbsRating":true,"suggestEdit":true,"raiseIssue":true},"navigation":{"pages":["index","quickstart"]}}
+{"$schema":"https://mintlify.com/docs.json","theme":"mint","name":"sectest","colors":{"primary":"#0D9373"},"navigation":{"pages":["index","quickstart"]}}
