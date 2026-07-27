@@ -1,11 +1,11 @@
 ---
-title: SSTI Probe
+title: XSS Test
 ---
 
-# SSTI Probe Page
+# XSS Test
 
-ProbeA-eval: RESA={7*7}
+Expr: {(()=>{window.__EXPR='EXPR_EXEC_'+document.domain;return 'EXPR_OK'})()}
 
-ProbeB-context: RESB={typeof process !== 'undefined' ? 'SERVER-has-process' : 'CLIENT-ctx'}
+<img src="x" onError={()=>{window.__IMG='IMG_ONERROR_'+document.domain}} />
 
-ProbeC-ctor: RESC={"".constructor.constructor('return typeof process')()}
+Done.
