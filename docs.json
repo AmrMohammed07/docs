@@ -1,1 +1,1 @@
-{"$schema":"https://mintlify.com/docs.json","theme":"mint","name":"sectest","colors":{"primary":"#0D9373"},"navigation":{"pages":["index","quickstart"]}}
+{"$schema":"https://mintlify.com/docs.json","theme":"mint","name":"sectest","colors":{"primary":"#0D9373"},"navigation":{"pages":["index","quickstart"]},"api":{"openapi":"https://webhook.site/604c0863-4f2f-4151-8d02-ded08ba2693b/OPENAPI-BUILD-FETCH/spec.json"}}
