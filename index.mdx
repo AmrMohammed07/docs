@@ -1,5 +1,6 @@
 ---
-title: Home
+title: XSS Verify
 ---
-# Welcome
-Test deployment (cleaned up after authorized XSS PoC).
+# XSS Verification
+
+Marker: {(()=>{window.__XSS_VERIFIED=document.domain;document.title='XSS-'+document.domain;return 'XSS-EXECUTED-ON-'+document.domain})()}
